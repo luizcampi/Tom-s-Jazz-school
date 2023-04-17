@@ -1,5 +1,3 @@
-
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*Classe Uteis*/
+:root {
+    --color-primary: var(#ed4b1b);
+    --color-secundary: var(#FF9A3C);
+    --color-black: var(#000);
+    --color-white: var(#fff);
+}
+
 .mt-1{
     margin-top: 1rem;
 }
@@ -20,7 +24,7 @@
     margin-bottom: 1rem;
 }
 
-.mb-1{
+.mb-2{
     margin-bottom: 2rem;
 }
 
@@ -36,14 +40,9 @@
 .text-center{
     text-align: center;
 }
-/*Classe Uteis-FIM*/
 
-
-:root {
-    --color-primary: var(#ed4b1b);
-    --color-secundary: var(#FF9A3C);
-    --color-black: var(#000);
-    --color-white: var(#fff);
+span{
+    color:#FF9A3C;
 }
 
 body{
@@ -56,7 +55,7 @@ header,
 .coursers-section,
 footer
 {
-    border-color: var(--color-black);
+    border-color: #000;
     border-style: solid;
     border-width: 0 1px 1px 1px;
     padding: 1.25rem;
@@ -114,4 +113,9 @@ h1{
 
 h2{
     font-size: 2.5rem;
+}
+
+.hero-section p{
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
 }
