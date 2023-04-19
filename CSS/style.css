@@ -69,6 +69,7 @@ header img{
 header nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
 }
 
 nav a{
@@ -236,6 +237,41 @@ form input{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    header img,
+    header nav,
+    header .buttton{
+    }
+}
+
+@media  screen and (min-width: 72rem) {
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+    
+    .container.reverse{
+        flex-direction: row-reverse;
+    }
+
+    footer .about-column{
+        flex: 2;
+    }
+
+    .about-column p{
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+
+    footer nav{
+        flex: 1;
+    }
+
+    form{
+        flex: 3;
     }
 }
 
